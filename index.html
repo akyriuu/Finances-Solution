@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Finances</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div id="Interface">
+      <h2>Personal finances</h2>
+      <div class="cards">
+        <div class="card income">
+          <div class="label">Revenue</div>
+          <div class="value" id="total-income"></div>
+        </div>
+        <div class="card expense">
+          <div class="label">Expenses</div>
+          <div class="value" id="total-expense"></div>
+        </div>
+        <div class="card balance">
+          <div class="label">Balance</div>
+          <div class="value" id="total-balance"></div>
+        </div>
+      </div>
+      <div class="form-wrap">
+        <h3 id="form-title">New transaction</h3>
+        <div class="edit-note" id="change-note">Changing transaction</div>
+        <div class="form-row">
+          <input type="text" id="f-desc" placeholder="Description" />
+          <input
+            type="number"
+            id="f-amount"
+            placeholder="Value (R$)"
+            min="0"
+            step="0.01"
+          />
+        </div>
+        <div class="form-row">
+          <select id="f-type">
+            <option value="income">Revenue</option>
+            <option value="expense">Expense</option>
+          </select>
+          <select id="f-cat">
+            <option>Salary</option>
+            <option>Freelance</option>
+            <option>Investments</option>
+            <option>Housing</option>
+            <option>Food</option>
+            <option>Transport</option>
+            <option>Health</option>
+            <option>Leisure</option>
+            <option>Others</option>
+          </select>
+        </div>
+
+        <div class="form-row full">
+          <input type="date" id="f-date" />
+        </div>
+        <div class="button-row">
+          <button class="primary" id="save-btn">New</button>
+          <button id="btn-cancel" style="display: none">Cancel</button>
+        </div>
+      </div>
+      <div class="filter-option">
+        <select id="filter-type">
+          <option value="all">All</option>
+          <option value="income">Revenue</option>
+          <option value="expense">Expense</option>
+        </select>
+        <input type="text" id="filter-search" placeholder="Search.." />
+      </div>
+      <div class="list" id="list"></div>
+    </div>
+    <script src="src/dist/script.js"></script>
+  </body>
+</html>
