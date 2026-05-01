@@ -2,6 +2,9 @@
 
 A simple personal finance tracker built with HTML, CSS, and TypeScript.
 
+<img width="576" height="480" alt="ezgif-413d60bc337c6cc1" src="https://github.com/user-attachments/assets/e1393e3d-0399-4cc2-aedf-d76937bc08fc" />
+
+
 ## Features - CRUD.
 
 - Add, edit, and delete transactions (income or expense)
