@@ -1,5 +1,7 @@
 # Personal Finances
 
+Check it live: https://akyriuu.github.io/Finances-Solution/
+
 A simple personal finance tracker built with HTML, CSS, and TypeScript.
 
 <img width="576" height="480" alt="ezgif-413d60bc337c6cc1" src="https://github.com/user-attachments/assets/e1393e3d-0399-4cc2-aedf-d76937bc08fc" />
